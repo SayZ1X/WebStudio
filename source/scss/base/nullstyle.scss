@@ -1,0 +1,51 @@
+//! =========== Null Style ===========
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+html {
+  height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button,
+button:active,
+button:focus {
+  outline: none;
+  border: none;
+}

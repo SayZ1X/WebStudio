@@ -1,0 +1,399 @@
+//! =========== Intro ===========
+.intro {
+  background-image: url("../../source/img/intro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+
+  @media (max-width: $tab3) {
+    padding: 120px 0;
+  }
+  // .intro__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  // .intro__title
+  &__title {
+    width: 696px;
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 136.364%;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    @media (max-width: $tab3) {
+      width: 360px;
+      font-size: 26px;
+      line-height: 161.538%;
+      letter-spacing: 1.56px;
+    }
+
+    @media (max-width: $ml) {
+      font-size: 26px;
+      line-height: 161.538%;
+      letter-spacing: 1.56px;
+    }
+  }
+  // .intro__button
+  &__button {
+  }
+}
+
+//! =========== About ===========
+
+.about {
+  padding: 94px 0;
+
+  @media (max-width: $tab3) {
+    padding: 60px 0;
+  }
+
+  // .about__container
+  &__container {
+  }
+  // .about__content
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    gap: 30px;
+    justify-content: space-between;
+
+    @media (max-width: $tab3) {
+      display: grid;
+      grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
+      gap: 30px;
+      justify-content: space-between;
+    }
+
+    @media (max-width: $ml) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  // .about__card
+  &__card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 25%;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+}
+
+.about-card {
+  // .about-card__img
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: #f5f4fa;
+    padding: 25px 0;
+    margin-bottom: 30px;
+    span {
+      font-size: 70px;
+    }
+  }
+  // .about-card__title
+  &__title {
+    color: #212121;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  // .about-card__text
+  &__text {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 171.429%;
+    letter-spacing: 0.42px;
+  }
+}
+
+//! =========== Workshop ===========
+
+.workshop {
+  @media (max-width: $tab3) {
+    display: none;
+  }
+  // .workshop__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  // .workshop__title
+  &__title {
+  }
+  // .workshop__content
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
+  // .workshop__card
+  &__card {
+    padding: 0 15px;
+  }
+}
+
+.workshop-card {
+  margin-bottom: 94px;
+  // .workshop-card__img
+  &__img {
+    position: relative;
+    overflow: hidden;
+    @media (min-width: $tab3) {
+      &:hover {
+        .workshop-card__overlay {
+          bottom: 0;
+          transition: 0.4s;
+        }
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  // .workshop-card__overlay
+  &__overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    height: 24%;
+    transition: 0.4s;
+  }
+  // .workshop-card__overlay-text
+  &__overlay-text {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+}
+
+//! =========== Team ===========
+
+.team {
+  background: #f5f4fa;
+  padding: 94px 0;
+
+  @media (max-width: $tab3) {
+    padding: 60px 0;
+  }
+  // .team__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  // .team__title
+  &__title {
+  }
+  // .team__content
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    gap: 30px;
+    justify-content: space-between;
+
+    @media (max-width: $tab3) {
+      display: grid;
+      grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
+      gap: 30px;
+      justify-content: space-between;
+    }
+
+    @media (max-width: $ml) {
+      display: grid;
+      grid-template-columns: minmax(100px, 1fr);
+      gap: 30px;
+      justify-content: space-between;
+    }
+  }
+  // .team__card
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 4px 4px;
+    background: #fff;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    padding-bottom: 42px;
+
+    @media (max-width: $ml) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.title {
+}
+
+.team-card {
+  // .team-card__avatar
+  &__avatar {
+    margin-bottom: 30px;
+    img {
+      max-width: 100%;
+    }
+  }
+  // .team-card__inner
+  &__inner {
+    padding: 0 44px;
+    @media (max-width: $comp2) {
+      padding: 0 15px;
+    }
+    @media (max-width: $ml) {
+      max-width: 206px;
+    }
+  }
+  // .team-card__text
+  &__text {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-bottom: 28px;
+  }
+  // .team-card__title
+  &__title {
+    color: #212121;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  // .team-card__description
+  &__description {
+    color: #757575;
+    font-weight: 400;
+  }
+  // .team-card__social
+  &__social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  // .team-card__img
+  &__img {
+    z-index: 2;
+    position: relative;
+
+    span {
+      font-size: 20px;
+      @media (min-width: $tab3) {
+        &:hover {
+          &:hover {
+            &:after {
+              content: "";
+              position: absolute;
+              top: -12px;
+              left: -12px;
+              width: 44px;
+              height: 44px;
+              background-color: #2196f3;
+              border-radius: 50%;
+              z-index: -1;
+            }
+          }
+          &::before {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+//! =========== Client ===========
+
+.client {
+  padding: 94px 0;
+  @media (max-width: $tab3) {
+    padding: 60px 0;
+  }
+  // .client__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  // .client__title
+  &__title {
+  }
+  // .client__content
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 92px;
+    gap: 30px;
+
+    @media (max-width: $tab3) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 92px 92px;
+      gap: 30px;
+    }
+
+    @media (max-width: $ml) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 92px 92px 92px;
+      gap: 30px;
+    }
+  }
+  // .client__card
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    span {
+      font-size: 41px;
+    }
+    @media (min-width: $tab3) {
+      &:hover {
+        border-color: #2196f3;
+        span {
+          &::before {
+            color: #2196f3;
+          }
+        }
+      }
+    }
+  }
+}
+
+.title {
+}
+
+.client-card {
+}

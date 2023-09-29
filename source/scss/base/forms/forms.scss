@@ -1,0 +1,137 @@
+.form {
+  // .form__form-label
+  &__form-label {
+  }
+  // .form__policy
+  &__policy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.form-label {
+  width: 100%;
+  // .form-label__item
+  &__item {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+  // .form-label__name
+  &__name {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    margin-bottom: 4px;
+  }
+  // .form-label__input
+  &__input {
+    position: relative;
+
+    span {
+      font-size: 18px;
+      position: absolute;
+      top: 30%;
+      left: 12px;
+    }
+
+    input {
+      background-color: transparent;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      font-family: "Arial";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 131.25%;
+      color: black;
+      width: 100%;
+      padding: 11px 12px 11px 42px;
+
+      &::placeholder {
+      }
+
+      &:focus {
+        border: 1px solid #2196f3;
+      }
+
+      &:focus + .icon-input {
+        &:before {
+          color: #2196f3;
+        }
+      }
+
+      @media (max-width: $ml) {
+        width: 100%;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      height: 120px;
+      padding: 12px 16px;
+      border-radius: 4px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      caret-color: black;
+      resize: none;
+      &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+      }
+    }
+  }
+  // .form-label__icon
+  &__icon {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.form-policy {
+  margin-bottom: 30px;
+  // .form-policy__checkbox
+  &__checkbox {
+    margin-right: 8px;
+  }
+  // .form-policy__text
+  &__text {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;
+  }
+  // .form-policy__link
+  &__link {
+    color: #2196f3;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+  }
+}
+
+.button {
+}
+
+// * ==== Кнопка
+@import "button.scss";
