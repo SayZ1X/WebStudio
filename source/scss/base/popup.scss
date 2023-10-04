@@ -1,0 +1,219 @@
+// .popup {
+//     display: flex;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+//     background: #fff;
+//     width: 400px;
+//     padding: 50px 25px;
+//     transition: 0.5s all;
+
+//     &.active {
+//       transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+//       transition: 0.5s all;
+//     }
+
+//   @media (max-width: $ml) {
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     height: 100%;
+//   }
+
+//   // .popup__bg
+//   &__bg {
+//      position: fixed;
+//      top: 0;
+//      left: 0;
+//      width: 100%;
+//      height: 100vh;
+//      z-index: 100;
+//      background: rgba(0, 0, 0, 0.5);
+//      opacity: 0; // Скрываем фон и сам попап
+//      pointer-events: none; // Запрещаем ему быть целью событий
+//      transition: 0.5s all;
+
+//      &.active {
+//        opacity: 1; // Показываем фон и попап
+//        pointer-events: all; // Возвращаем события
+//        transition: 0.5s all;
+//      }
+//   }
+
+//   & > .feedback-content__form {
+//     margin-bottom: 0;
+//   }
+// }
+
+// .close-popup {
+//   position: absolute;
+//   top: 10px;
+//   right: 9px;
+
+//   @media (min-width: $tab1) {
+//     cursor: pointer;
+//   }
+
+//   &:after,
+//   &:before {
+//     content: "";
+//     background-color: #000;
+//     position: absolute;
+//     width: 20px;
+//     height: 3px;
+//     right: 0;
+//     transition: all 0.3s ease 0s;
+
+//     @media (max-width: $ml) {
+//       width: 30px;
+//     }
+//   }
+
+//   &:before {
+//     transform: rotate(44deg);
+//     top: 9px;
+//   }
+
+//   &:after {
+//     transform: rotate(-44deg);
+//     top: 9px;
+//   }
+// }
+
+// .popup-lock {
+//   @media (max-width: $ml) {
+//     overflow: hidden;
+//   }
+// }
+
+//! ================== NEW ===================
+
+.popup {
+  z-index: 9999;
+  // .popup__bg
+  &__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0; // Скрываем фон и сам попап
+    pointer-events: none; // Запрещаем ему быть целью событий
+    transition: 0.5s all;
+
+    &.active {
+      opacity: 1; // Показываем фон и попап
+      pointer-events: all; // Возвращаем события
+      transition: 0.5s all;
+    }
+  }
+  // .popup__window
+  &__window {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+    background: #fff;
+    width: 528px;
+    max-width: 90%;
+    padding: 40px 40px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transition: 0.5s all;
+
+    @media (max-width: $tab3) {
+      width: 450px;
+    }
+
+    &.active {
+      transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+      transition: 0.5s all;
+    }
+
+    @media (max-width: $ms) {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  // .modal__title
+  &__title {
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    margin-bottom: 12px;
+
+    @media (max-width: $tab3) {
+      line-height: 150%;
+    }
+  }
+  // .modal__form
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 9px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0.2px solid #000;
+  background: none;
+
+  &:hover {
+    border-color: #2196f3;
+    &::before,
+    &::after {
+      background-color: #2196f3;
+    }
+  }
+
+  @media (min-width: $tab1) {
+    cursor: pointer;
+  }
+
+  &:after,
+  &:before {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    width: 20px;
+    height: 1.3px;
+    right: 4px;
+  }
+
+  &:before {
+    transform: rotate(44deg);
+    top: 14px;
+  }
+
+  &:after {
+    transform: rotate(-44deg);
+    top: 14px;
+  }
+}
+
+.popup-lock {
+  @media (max-width: $ml) {
+    overflow: hidden;
+  }
+}

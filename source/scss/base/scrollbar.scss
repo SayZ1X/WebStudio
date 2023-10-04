@@ -1,0 +1,13 @@
+//! =========== Scrollbar ===========
+
+// ==== полоса прокрутки (скроллбар) ====
+::-webkit-scrollbar {
+   width: 10px;
+   background-color: #2f303a;
+}
+
+// ==== ползунок скроллбара ====
+::-webkit-scrollbar-thumb {
+   background-color: #2196f3;
+   border-radius: 0;
+}

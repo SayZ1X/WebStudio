@@ -1,0 +1,39 @@
+@font-face {
+   font-family: 'social';
+   src: url('/source/img/fonts/social/social.eot?xsakip');
+   src: url('/source/img/fonts/social/social.eot?xsakip#iefix') format('embedded-opentype'),
+      url('/source/img/fonts/social/social.ttf?xsakip') format('truetype'),
+      url('/source/img/fonts/social/social.woff?xsakip') format('woff'),
+      url('/source/img/fonts/social/social.svg?xsakip#social') format('svg');
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: 'social' !important;
+   speak: never;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fb:before {
+   content: "\e900";
+}
+
+.icon-inst:before {
+   content: "\e901";
+}
+
+.icon-twit:before {
+   content: "\e902";
+}

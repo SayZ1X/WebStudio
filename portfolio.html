@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="source/css/style.css" />
+    <link rel="stylesheet" href="source/fonts/icomoon/style.css" />
+    <title>WebStudio - Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <div class="header__container container">
+        <a class="scroll" href="index.html"><img class="header__logo" src="source/img/logo.png" alt="logo" /></a>
+
+        <div class="header__links">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="index.html">Cтудiя</a></li>
+              <li class="nav__item"><a class="nav__link" href="portfolio.html">Портфоліо</a></li>
+              <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__contact header-contacts">
+            <ul class="header-contacts__list">
+              <a href="mailto:info@devstudio.com">
+                <li class="header-contacts__item">
+                  <span class="icon-mail-header"></span>
+                  <div class="header-contacts__link header-contacts__link_mail">info@devstudio.com</div>
+                </li>
+              </a>
+              <a href="tel:+380961111111">
+                <li class="header-contacts__item">
+                  <span class="icon-phone-header"></span>
+                  <div class="header-contacts__link header-contacts__link_tel">+38 096 111 11 11</div>
+                </li>
+              </a>
+            </ul>
+
+            <div class="header-contacts__social">
+              <div class="header-contacts__social header-social">
+                <ul class="header-social__list">
+                  <li class="header-social__item"><a class="header-social__link" href="https://www.instagram.com/">Instagram</a></li>
+                  <li class="header-social__item"><a class="header-social__link" href="https://twitter.com/?lang=uk">Twitter</a></li>
+                  <li class="header-social__item"><a class="header-social__link" href="https://uk-ua.facebook.com/">Facebook</a></li>
+                  <li class="header-social__item"><a class="header-social__link" href="https://www.linkedin.com/">LinkedIn</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__burger">
+          <div class="header-burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+
+    <main class="wrapper">
+      <section class="catalog">
+        <div class="catalog__container container">
+          <div class="catalog__filter filter">
+            <ul class="filter__menu filter-menu">
+              <li class="filter-menu__item">
+                <button class="filter-menu__button filter-selected" data-id="all">Усі</button>
+              </li>
+              <li class="filter-menu__item">
+                <button class="filter-menu__button" data-id="sites">Веб-сайти</button>
+              </li>
+              <li class="filter-menu__item">
+                <button class="filter-menu__button" data-id="applications">Додатки</button>
+              </li>
+              <li class="filter-menu__item">
+                <button class="filter-menu__button" data-id="design">Дизайн</button>
+              </li>
+              <li class="filter-menu__item">
+                <button class="filter-menu__button" data-id="marketing">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
+          <div class="catalog__content">
+            <div class="catalog__card catalog-card sites">
+              <div class="catalog-card__img">
+                <img src="source/img/catalog/technokr9ck.jpg" alt="technokr9ck" />
+                <div class="catalog-card__overlay">
+                  <p class="catalog-card__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <a href="#">
+                <div class="catalog-card__text">
+                  <h6 class="catalog-card__title">Технокряк</h6>
+                  <div class="catalog-card__category">Веб-сайт</div>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__card catalog-card design">
+              <div class="catalog-card__img">
+                <img src="source/img/catalog/newOrleanVSGolden.jpg" alt="newOrleanVSGolden" />
+                <div class="catalog-card__overlay">
+                  <p class="catalog-card__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <a href="#">
+                <div class="catalog-card__text">
+                  <h6 class="catalog-card__title">Постер New Orlean vs Golden Star</h6>
+                  <div class="catalog-card__category">Дизайн</div>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__card catalog-card applications">
+              <div class="catalog-card__img">
+                <img src="source/img/catalog/seafood.jpg" alt="seafood" />
+                <div class="catalog-card__overlay">
+                  <p class="catalog-card__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <a href="#">
+                <div class="catalog-card__text">
+                  <h6 class="catalog-card__title">Ресторан Seafood</h6>
+                  <div class="catalog-card__category">Додаток</div>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__card catalog-card marketing">
+              <div class="catalog-card__img">
+                <img src="source/img/catalog/Prime.jpg" alt="Prime" />
+                <div class="catalog-card__overlay">
+                  <p class="catalog-card__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <a href="#">
+                <div class="catalog-card__text">
+                  <h6 class="catalog-card__title">Проєкт Prime</h6>
+                  <div class="catalog-card__category">Маркетинг</div>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__card catalog-card applications">
+              <div class="catalog-card__img">
+                <img src="source/img/catalog/Boxes.jpg" alt="Boxes" />
+                <div class="catalog-card__overlay">
+                  <p class="catalog-card__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <a href="#">
+                <div class="catalog-card__text">
+                  <h6 class="catalog-card__title">Проєкт Boxes</h6>
+                  <div class="catalog-card__category">Додаток</div>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__card catalog-card sites">
+              <div class="catalog-card__img">
+                <img src="source/img/catalog/Inspiration.jpg" alt="Inspiration" />
+                <div class="catalog-card__overlay">
+                  <p class="catalog-card__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <a href="#">
+                <div class="catalog-card__text">
+                  <h6 class="catalog-card__title">Inspiration has no Borders</h6>
+                  <div class="catalog-card__category">Веб-сайт</div>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__card catalog-card design">
+              <div class="catalog-card__img">
+                <img src="source/img/catalog/LimitedEdition.jpg" alt="LimitedEdition" />
+                <div class="catalog-card__overlay">
+                  <p class="catalog-card__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <a href="#">
+                <div class="catalog-card__text">
+                  <h6 class="catalog-card__title">Видання Limited Edition</h6>
+                  <div class="catalog-card__category">Дизайн</div>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__card catalog-card marketing">
+              <div class="catalog-card__img">
+                <img src="source/img/catalog/LAB.jpg" alt="LAB" />
+                <div class="catalog-card__overlay">
+                  <p class="catalog-card__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <a href="#">
+                <div class="catalog-card__text">
+                  <h6 class="catalog-card__title">Проєкт LAB</h6>
+                  <div class="catalog-card__category">Маркетинг</div>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__card catalog-card applications">
+              <div class="catalog-card__img">
+                <img src="source/img/catalog/GrowingBusiness.jpg" alt="GrowingBusiness" />
+                <div class="catalog-card__overlay">
+                  <p class="catalog-card__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <a href="#">
+                <div class="catalog-card__text">
+                  <h6 class="catalog-card__title">Growing Business</h6>
+                  <div class="catalog-card__category">Додаток</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__links">
+          <div class="footer__logo">
+            <img src="source/img/logo_white.png" alt="logo_white" />
+          </div>
+          <ul class="footer__menu footer-menu">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link footer-menu__link_white" href="http://surl.li/lcpso" target="_blank">м. Київ, пр-т Лесі Українки, 26</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__media">
+          <h5 class="footer__title">приєднуйтесь</h5>
+          <div class="footer__social footer-social">
+            <div class="footer-social__img">
+              <a href="https://www.instagram.com/" target="_blank">
+                <span class="icon-instagram"></span>
+              </a>
+            </div>
+            <div class="footer-social__img">
+              <a href="https://twitter.com/?lang=uk" target="_blank">
+                <span class="icon-twitter"></span>
+              </a>
+            </div>
+            <div class="footer-social__img">
+              <a href="https://uk-ua.facebook.com/" target="_blank">
+                <span class="icon-facebook"></span>
+              </a>
+            </div>
+            <div class="footer-social__img">
+              <a href="https://www.linkedin.com/" target="_blank">
+                <span class="icon-linkedin"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__subscribe">
+          <h5 class="footer__title">Підпишіться на розсилку</h5>
+          <form class="footer__input form">
+            <input class="footer__blank" type="email" placeholder="E-mail" />
+            <button class="footer__button button">Підписатися</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="source/js/burger.js"></script>
+    <script type="text/javascript" src="source/js/tabs.js"></script>
+    <script type="text/javascript" src="source/js/headerfixed.js"></script>
+    <script type="text/javascript" src="source/js/spoiler.js"></script>
+    <script type="text/javascript" src="source/js/animation.js"></script>
+    <script type="text/javascript" src="source/js/popup.js"></script>
+    <script type="text/javascript" src="source/js/filter.js"></script>
+    <script type="text/javascript" src="source/js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="source/js/mask.js"></script>
+    <script type="text/javascript" src="source/js/scrollto.js"></script>
+    <script type="text/javascript" src="source/js/slider-b-f.js"></script>
+
+    <script>
+      $(document).ready(function () {
+          $("#phone1").mask("+380 99-999-99-99");
+      });
+  </script>
+
+  </body>
+</html>

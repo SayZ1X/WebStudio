@@ -1,0 +1,5 @@
+// * =========== Mixin ===========
+
+@mixin line-height($lineHight, $fontSize) {
+  line-height: $lineHight / $fontSize * 100%;
+}

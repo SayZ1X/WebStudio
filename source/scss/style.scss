@@ -1,0 +1,103 @@
+// * =========== Змінні ===========
+
+// Width conteiner
+$container: 1170px;
+$containerPadding: 15px;
+
+// Standart font family
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+$fontFamily: "Roboto";
+
+// Colors
+$mainColor: white;
+
+// breakpoints
+$comp1: 1440px;
+$comp2: 1024px;
+$tab1: 972px;
+$tab2: 800px;
+$tab3: 768px;
+$tab4: 600px;
+$tab5: 479px;
+$ml: 480px;
+$mm: 375px;
+$ms: 320px;
+
+// * =========== Classes ===========
+
+body {
+  background-color: $mainColor;
+  font-family: $fontFamily;
+
+  @media (max-width: $tab4) {
+    &.lock {
+      overflow: hidden;
+    }
+  }
+
+  &.hide {
+    overflow: visible;
+  }
+
+  &.popup-lock{
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: ($container + $containerPadding * 2) - $containerPadding * 2;
+  padding: 0 $containerPadding;
+  margin: 0 auto;
+}
+
+.ibg {
+  position: relative;
+}
+
+.ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: right;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@import "settings/mixin";
+@import "base/base";
+@import "_header";
+@import "_index";
+@import "_portfolio";
+@import "_footer";
+
+.title {
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
